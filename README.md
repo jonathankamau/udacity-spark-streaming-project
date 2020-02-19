@@ -28,9 +28,9 @@ The most efficient SparkSession properties I found were:
 
 #### maxOffsetsPerTrigger 
 - When I set the value of `maxOffsetsPerTrigger` at 200, this were the results I would get in the Progress Reporter for both `numInputRows` and `processedRowsPerSecond`:
-![max_offset_trigger](screenshots/max-offset-trigger-200.png "MaxOffsetTrigger at 200")
+    ![max_offset_trigger](screenshots/max-offset-trigger-200.png "MaxOffsetTrigger at 200")
 - When I increased it to 400, there was a clear increase in the `numInputRows` and `processedRowsPerSecond` as shown below:
-![max_offset_trigger](screenshots/max-offset-trigger-400.png "MaxOffsetTrigger at 400")
+    ![max_offset_trigger](screenshots/max-offset-trigger-400.png "MaxOffsetTrigger at 400")
 
 #### Trigger Processing Time
 An increase in the interval time was resulting in a slower delivery of the batches of data while a decrease ensured faster delivery time.
